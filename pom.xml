@@ -13,9 +13,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hello-world</name>
 	<description>Demo hello-world project</description>
+
 	<properties>
+		<version>0.0.1</version>
 		<java.version>20</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -36,6 +39,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+
+		<finalName>${project.artifactId}-${project.version}</finalName>
 	</build>
 
 </project>
